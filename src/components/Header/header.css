@@ -1,0 +1,30 @@
+header {
+    position: fixed;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    gap: 100px;
+    align-items: center;
+    z-index: 2;
+
+    & img {
+        width: 250px;
+    }
+
+    & nav {
+        & ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        & li {
+            cursor: pointer;
+        }
+
+        & li:hover {
+            color: #beff1b;
+        }
+    }
+}
